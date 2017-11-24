@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awais.test.change_status">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Currently set to:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignEnd="@+id/scrollView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Hey there! I am free."
+        style="@style/EditText"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/space20"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/text1"
+        android:layout_alignEnd="@+id/scrollView3"
+        android:layout_alignStart="@+id/scrollView3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="370dp"
+        android:layout_height="75dp"
+        android:text="Select your status"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+         android:layout_marginTop="10dp"
+        style="@style/EditText"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/scrollView3"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="350dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollView3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Available"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Busy"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="At school"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="At the movies"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="At work"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Battery about to die"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Can't talk, WhatsApp only"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="In a meeting"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="At the gym"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Sleeping"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Urgent calls only"
+                android:textSize="22dp"
+                style="@style/EditText"
+                android:textColor="@color/colorTextBlack"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

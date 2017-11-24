@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.awais.test">
+
+    <!-- <activity -->
+    <!-- android:name=".Splash" -->
+    <!-- android:theme="@style/AppThemeFull"> -->
+    <!-- <intent-filter> -->
+    <!-- <action android:name="android.intent.action.MAIN" /> -->
+    <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+    <!-- </intent-filter> -->
+    <!-- </activity> -->
+    <!-- <activity -->
+    <!--  -->
+    <!-- android:name=".SetupPhoneNumber" -->
+    <!-- android:theme="@style/AppTheme" /> -->
+    <!-- <activity -->
+    <!-- android:name=".MainActivity" -->
+    <!-- android:label="@string/title_activity_main" -->
+    <!-- android:theme="@style/AppTheme.Trans"></activity> -->
+    <!-- <activity -->
+    <!-- android:name=".Conversation" -->
+    <!-- android:theme="@style/AppTheme.Trans"></activity> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Whatsapp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Conversation">
+            <intent-filter>
+                <action android:name="com.example.awais.test.Conversation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".temp">
+            <intent-filter>
+                <action android:name="com.example.awais.test.temp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting">
+            <intent-filter>
+                <action android:name="com.example.awais.test.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".updateProfileF">
+            <intent-filter>
+                <action android:name="com.example.awais.test.updateProfileF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainPage">
+            <intent-filter>
+                <action android:name="com.example.awais.test.mainPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contactDetail">
+            <intent-filter>
+                <action android:name="com.example.awais.test.contactDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <intent-filter>
+                <action android:name="com.example.awais.test.SettingsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetupPhoneNumber"
+            android:label="@string/title_activity_settings">
+            <intent-filter>
+                <action android:name="com.example.awais.test.SetupPhoneNumber" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changeUName">
+            <intent-filter>
+                <action android:name="com.example.awais.test.changeUName" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".change_status">
+            <intent-filter>
+                <action android:name="com.example.awais.test.change_status" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".status2">
+            <intent-filter>
+                <action android:name="com.example.awais.test.status2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
